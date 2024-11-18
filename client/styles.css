@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+/* body{
+    width: 90%;
+} */
+label input{
+    display: block;
+}
+
+:root{
+    --light-blue: #3D3BF3;
+    --text-color: #1A1A1D;
+}
+
+header.header{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+header.header .logo{
+    width: 100px;
+    height: 100px;
+}
+header.header .logo img{
+    width: 100%;
+    cursor: pointer;
+}
+nav.navbar{
+    flex-basis: 1;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+nav.navbar ul.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav.navbar ul.nav-links li{
+    font-size: 18px;
+    margin-left: 30px;
+}
+nav.navbar ul.nav-links li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 600;
+    font-size: 18px;
+    transition: .3s;
+}
+nav.navbar ul.nav-links li a:hover{
+    color: var(--light-blue);
+}
+nav.navbar button{
+    padding: 10px 20px;
+    border: 1px solid var(--text-color);
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    background: #fff;
+    transition: .3s;
+    margin-left: 45px;
+    height: 45px;
+    border-radius: 35px;
+    align-content: center;
+    margin-top: 21px;
+    /* position: absolute;
+    right: 45px;
+    top: 33px; */
+}
+nav.navbar button:hover{
+    background: var(--text-color);
+    color: #fff;
+}
+
+section.hero{
+    min-height: 80vh;
+    background: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.5)),  url(./images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 40px;
+    margin-left: 80px; */
+    backdrop-filter: var(--text-color);
+    padding: 50px 45px;
+}
+section.hero h1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: var(--light-blue);
+}
+
+section.hero h1 span{
+    color: var(--text-color);
+}
+section.hero p{
+    font-size: 18px;
+    padding: 10p 20px;
+    max-width: 400px;
+}
+section.hero button{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border: 1px solid var(--text-color);
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    background: #fff;
+    transition: .3s;
+    border-radius: 35px;
+}
+section.hero button:hover{
+    background: var(--text-color);
+    color: #fff;
+}
+
+footer.footer{
+    width: 100%;
+    background-color: var(--text-color);
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 30px;
+    color: #fff;
+}
+footer.footer .logo{
+    width: 80px;
+    height: 80px;
+}
+footer.footer .logo img{
+    width: 100%;
+    cursor: pointer;
+}
+footer.footer p{
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+}
+footer.footer .socials ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    margin-top: 33px;
+}
+footer.footer .socials ul li{
+    margin-left: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+footer.footer .socials ul li:hover{
+    color: var(--light-blue);
+}
+
+/*-----------Registration Form--------------*/
+.container{
+    width: 600px;
+    background: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.container h1{
+    color: var(--light-blue);
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 5px;
+    letter-spacing: 1px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+form label{
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text-color);
+}
+form input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"]{
+    outline: ipx solid var(--text-color);
+    border: 1px solid var(--light-blue);
+    padding: 10px;
+    border-radius: 2px;
+    margin: 6px 5px;
+}
+form .gender{
+    margin: 5px 0;
+    align-content: center;
+}
+form .gender input[type="radio"]{
+    margin: 0 5px;
+}
+
+form button{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border: 1px solid var(--text-color);
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    background: #fff;
+    transition: .3s ease-in-out;
+    border-radius: 35px;
+}
+form button:hover{
+    background: var(--text-color);
+    color: #fff;
+}
+form p.cta{
+    font-size: 13px;
+    color: var(--text-color);
+}
+form p.cta a{
+    font-size: 14px;
+    color: var(--light-blue);
+    cursor: pointer;
+    transition: .3s;
+}
+form p.cta a:hover{
+    color: #000;
+}
+
+.login{
+    align-content: center;
+    margin-left: 15%;
+    width: 600px;
+}
+.register{
+    margin-left: 18%;
+}

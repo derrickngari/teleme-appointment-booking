@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemed Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./doctors.html">Doctors</a></li>
+                <li><a href="./appointments.html">Appoinments</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+            </ul>
+            <a href="./register.html"><button class="btn">Register</button></a>
+        </nav>
+    </header>
+    <div class="container login">
+        <h1>Login 🤗</h1>
+        <form action="./index.html" method="get" id="login-form">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+
+            <label for="password">pasword</label>
+            <input type="password" id="password" name="password" placeholder="*******" required>
+
+            <button>Login</button>
+            <p class="cta">Don't have an account? <a href="./register.html">Register</a></p>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
